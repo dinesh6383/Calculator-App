@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator-App</title>
+    <link rel="icon" href="calculator.png">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- STYLE SHEET -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="head">
+        <nav>
+            <h1>CALCULATOR</h1>
+            <i class="fa-solid fa-bars fa-2xl"></i>
+        </nav>
+    </header>
+
+    <main id="main">
+        <div id="container">
+            <div id="calculator">
+                <div class="total">
+                    <h2>Empty!</h2>
+                </div>
+                <div class="typing">
+                    <h5 style="font-size:17px;"></h5>
+                </div>
+                <div id="keyboard">
+                    <div class="row-1">
+                        <button class="ac"  style="font-size: 35px; font-weight:700;">AC</button>
+                        <button class="clear"><i class="fa-solid fa-delete-left fa-2xl"></i></button>
+                        <button class="percent"><i class="fa-solid fa-percent fa-2xl"></i></button>
+                        <button class="divide"><i class="fa-solid fa-divide fa-2xl"></i></button>
+                    </div>
+                    <div class="row-2">
+                        <button class="seven number" style="font-size: 35px; font-weight:700;" value="7">7</button>
+                        <button class="eight number" style="font-size: 35px; font-weight:700;" value="8">8</button>
+                        <button class="nine number" style="font-size: 35px; font-weight:700;" value="9">9</button>
+                        <button class="multiply"><i class="fa-solid fa-xmark fa-2xl"></i></button>
+                    </div>
+                    <div class="row-3">
+                        <button class="four number" style="font-size: 35px; font-weight:700;" value="4">4</button>
+                        <button class="five number" style="font-size: 35px; font-weight:700;" value="5">5</button>
+                        <button class="six number" style="font-size: 35px; font-weight:700;" value="6">6</button>
+                        <button class="sub"><i class="fa-solid fa-minus fa-2xl"></i></button>
+                    </div>
+                    <div class="row-4">
+                        <button class="one number" style="font-size: 35px; font-weight:700;" value="1">1</button>
+                        <button class="two number" style="font-size: 35px; font-weight:700;" value="2">2</button>
+                        <button class="three number" style="font-size: 35px; font-weight:700;" value="3">3</button>
+                        <button class="add"><i class="fa-solid fa-add fa-2xl"></i></button>
+                    </div>
+                    <div class="row-5">
+                        <button class="zero number" style="font-size: 35px; font-weight:700;" value="0">0</button>
+                        <button class="dot"><i class="fa-solid fa-circle"></i></button>
+                        <button class="equal" style="width:150px; background-color: rgb(245,170,115); color:white;font-size: 40px; font-weight:700;">=</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="history" style="display:none;">
+                <!-- History needs to be appended -->
+            </div>
+
+            <div id="navigators">
+                <h3 class="history">History</h3>
+                <hr style="width:50%;">
+                <h3 class="about">About app</h3>
+            </div>
+        </div>
+    </main>
+
+
+
+ <script src="script.js"></script>
+</body>
+</html>
